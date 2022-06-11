@@ -186,5 +186,5 @@ end
 print('Uploaded Quests')
 print('wh!' .. json.encode({
   username = 'Weekly Dealer',
-  content = string.format('-- Updated Weekly Dealer inventory.\n\nBattleship: %s\nDreadnought: %s', battleship[1], dreadnought[1])
+  content = string.format('-- Updated Weekly Dealer inventory.\n\nDreadnought: %s\nCarrier: %s\nBattleship: %s', carrier[1], dreadnought[1], battleship[1])
 }))
