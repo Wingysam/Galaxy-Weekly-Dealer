@@ -20,6 +20,26 @@ end
 
 local prices = {}
 
+prices.Battlecruiser = discount(.7, {
+  { 'Tengu', 8401 },
+  { 'Vansnova', 8928 },
+  { 'Marauder', 12010 },
+  { 'Valiant', 13686 },
+  { 'Vigilance', 14671 },
+  { 'Razor Wing', 14840 },
+  { 'Belvat', 14950 },
+  { 'Radiance', 16584 },
+  { 'Mjolnheimr', 17904 },
+  { 'MRLS Launcher', 18170 },
+  { 'Hyron', 20300 },
+  { 'Black Flare', 20678 },
+  { 'Bastion', 23815 },
+  { 'Absolution', 23917 },
+  { 'Dire Wolf', 24188 },
+  { 'Sturm', 24725 },
+  { 'Grievion', 25487 }
+})
+
 prices.Battleship = discount(.7, {
   { 'Prowler', 17850 },
   { 'Warden', 23101 },
@@ -160,9 +180,11 @@ end
 local carrier = prices.Carrier[math.random(1, #prices.Carrier)]
 local dreadnought = prices.Dreadnought[math.random(1, #prices.Dreadnought)]
 local battleship = prices.Battleship[math.random(1, #prices.Battleship)]
+local battlecruiser = prices.Battlecruiser[math.random(1, #prices.Battlecruiser)]
 makeQuest('77', table.unpack(carrier))
 makeQuest('79', table.unpack(dreadnought))
 makeQuest('78', table.unpack(battleship))
+makeQuest('76', table.unpack(battlecruiser))
 
 if args.dry_run then return end
 
@@ -186,5 +208,5 @@ end
 print('Uploaded Quests')
 print('wh!' .. json.encode({
   username = 'Weekly Dealer',
-  content = string.format('-- Updated Weekly Dealer inventory.\n\nCarrier: %s\nDreadnought: %s\nBattleship: %s', carrier[1], dreadnought[1], battleship[1])
+  content = string.format('-- Updated Weekly Dealer inventory.\n\nCarrier: %s\nDreadnought: %s\nBattleship: %s\nBattlecruiser: %s', carrier[1], dreadnought[1], battleship[1], battlecruiser[1])
 }))
