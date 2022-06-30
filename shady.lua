@@ -31,18 +31,19 @@ prices.Battlecruiser = discount(.7, {
   { 'Radiance', 16584 },
   { 'Mjolnheimr', 17904 },
   { 'MRLS Launcher', 18170 },
-  { 'Hyron', 20300 },
   { 'Black Flare', 20678 },
   { 'Bastion', 23815 },
   { 'Absolution', 23917 },
   { 'Dire Wolf', 24188 },
   { 'Sturm', 24725 },
-  { 'Grievion', 25487 }
+  { 'Grievion', 25487 },
+  { 'Hyron', 26725 }
 })
 
 prices.Battleship = discount(.7, {
   { 'Prowler', 17850 },
   { 'Warden', 23101 },
+  { 'Legionnaire', 33341 },
   { 'Hasatan', 33525 },
   { 'Sovereign', 33889 },
   { 'Hawklight', 33917 },
@@ -54,7 +55,6 @@ prices.Battleship = discount(.7, {
   { 'Carvainir', 49067 },
   { 'Jackal', 51436 },
   { 'Nisos', 52152 },
-  { 'Legionnaire', 52506 },
   { 'Consul', 53871 },
   { 'Ampharos', 56222 },
   { 'Loyalist', 59840 },
@@ -84,8 +84,8 @@ prices.Dreadnought = discount(.7, {
 prices.Carrier = discount(.7, {
   { 'Hevnetier', 233005 },
   { 'Stormbringer', 239396 },
-  { 'Borealis', 240641 },
   { 'Vanguard', 241213 },
+  { 'Borealis', 241819 },
   { 'Nyx', 266906 },
   { 'Nimitz', 272119 },
   { 'Rapture', 273104 },
