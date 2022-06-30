@@ -105,7 +105,7 @@ end
 
 local function pluralize(noun)
   local lastLetter = string.lower(string.sub(noun, #noun))
-  if lastLetter == 's' or lastLetter == 'h' then
+  if lastLetter == 's' or lastLetter == 'h' or lastLetter == 'z' then
     return noun .. 'es'
   else
     return noun .. 's'
